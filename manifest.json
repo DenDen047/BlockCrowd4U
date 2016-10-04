@@ -1,0 +1,18 @@
+{
+    "name": "Block Ad",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Block pop ad.",
+
+    "permissions": [
+        "http://*/*"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["http://*/*"],
+            "js": ["scripts/crowd4u.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
